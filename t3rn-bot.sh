@@ -4,7 +4,7 @@
 SCRIPT_PATH="$HOME/t3rn-bot.sh"
 
 # 定义仓库地址和目录名称
-REPO_URL="https://github.com/jiecaojiaobanji/t3rn-bot.git"
+REPO_URL="https://github.com/cxqsb/t3rn-bot.git"
 DIR_NAME="t3rn-bot"
 PYTHON_FILE="keys_and_addresses.py"
 DATA_BRIDGE_FILE="data_bridge.py"
@@ -15,7 +15,7 @@ VENV_DIR="t3rn-env"  # 虚拟环境目录
 function main_menu() {
     while true; do
         clear
-        echo "test由大赌社区哈哈哈哈编写，推特 @ferdie_jhovie，免费开源，请勿相信收费"
+        echo "脚本由大赌社区哈哈哈哈编写，推特 @ferdie_jhovie，免费开源，请勿相信收费"
         echo "如有问题，可联系推特，仅此只有一个号"
         echo "================================================================"
         echo "退出脚本，请按键盘 ctrl + C 退出即可"
@@ -162,10 +162,10 @@ EOL
     echo "配置完成，正在通过 screen 运行 bot.py..."
 
     # 使用 screen 后台运行 bot.py
-    screen -dmS t3rn-bot python3 $BOT_FILE
+    screen -dmS t3rn python3 $BOT_FILE
 
     # 输出信息
-    echo "bot.py 已在后台运行，您可以通过 'screen -r t3rn-bot' 查看运行日志。"
+    echo "bot.py 已在后台运行，您可以通过 'screen -r t3rn' 查看运行日志。"
 
     # 提示用户按任意键返回主菜单
     read -n 1 -s -r -p "按任意键返回主菜单..."
